@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug with GHCi",
+            "type": "haskell",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "program": "${file}",
+            "args": [],
+            "stopOnEntry": false,
+            "logFile": "${workspaceFolder}/haskell-debug.log",
+            "ghciPrompt": "H>>= ",
+            "ghciInitialPrompt": "Prelude> ",
+            "ghciCmd": "stack ghci --test --no-load --no-build --main-is Main.hs",
+            "ghciEnv": {}
+        }
+    ]
+}
